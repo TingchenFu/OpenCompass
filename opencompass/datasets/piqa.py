@@ -10,6 +10,9 @@ class piqaDataset_V2(BaseDataset):
 
     @staticmethod
     def load(**kwargs):
+        print("at herev2")
+        print(kwargs)
+        exit()
         dataset = load_dataset(**kwargs)
 
         def preprocess(example):
@@ -30,6 +33,9 @@ class piqaDataset_V3(BaseDataset):
 
     @staticmethod
     def load(**kwargs):
+        print("at here")
+        print(kwargs)
+        exit()
         dataset = load_dataset(**kwargs)
 
         def preprocess(example):

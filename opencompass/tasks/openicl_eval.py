@@ -43,7 +43,8 @@ class OpenICLEvalTask(BaseTask):
 
     def get_command(self, cfg_path, template):
         script_path = __file__
-        python = 'python3' if which('python3') else 'python'
+        python='python'
+        #python = 'python3' if which('python3') else 'python'
         command = f'{python} {script_path} {cfg_path}'
         return template.format(task_cmd=command)
 

@@ -37,9 +37,9 @@ def compute_wsjd(data_dict):
     with open(f'/tmp/tmp_gold_{uid}.para', 'w') as f:
         f.writelines(golds)
     os.environ['KMP_DUPLICATE_LIB_OK']='True'
-    os.system(f'python3 parallel_to_m2.py -f /tmp/tmp_pred_{uid}.para -o /tmp/tmp_pred_{uid}.para.m2 -g char')
-    os.system(f'python3 parallel_to_m2.py -f /tmp/tmp_gold_{uid}.para -o /tmp/tmp_gold_{uid}.para.m2 -g char')
-    output = subprocess.check_output(f"python3 compare_m2_for_evaluation.py -hyp /tmp/tmp_pred_{uid}.para.m2 -ref /tmp/tmp_gold_{uid}.para.m2", shell = True)
+    os.system(f'python parallel_to_m2.py -f /tmp/tmp_pred_{uid}.para -o /tmp/tmp_pred_{uid}.para.m2 -g char')
+    os.system(f'python parallel_to_m2.py -f /tmp/tmp_gold_{uid}.para -o /tmp/tmp_gold_{uid}.para.m2 -g char')
+    output = subprocess.check_output(f"python compare_m2_for_evaluation.py -hyp /tmp/tmp_pred_{uid}.para.m2 -ref /tmp/tmp_gold_{uid}.para.m2", shell = True)
     score = float(output.decode().split('\t')[-1].split('\n')[0])
     #remove prediction files
     os.remove(f'/tmp/tmp_pred_{uid}.para')

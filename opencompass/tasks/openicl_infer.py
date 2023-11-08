@@ -49,7 +49,8 @@ class OpenICLInferTask(BaseTask):
                        f'--nproc_per_node {self.num_procs} '
                        f'{script_path} {cfg_path}')
         else:
-            python = 'python3' if which('python3') else 'python'
+            python='python'
+            #python = 'python3' if which('python3') else 'python'
             command = f'{python} {script_path} {cfg_path}'
 
         return template.format(task_cmd=command)

@@ -4,10 +4,11 @@ from setuptools.command.install import install
 
 class DownloadNLTK(install):
 
-    def run(self):
-        self.do_egg_install()
-        import nltk
-        nltk.download('punkt')
+    # def run(self):
+    #     self.do_egg_install()
+    #     import nltk
+    #     nltk.download('punkt')
+    pass
 
 
 def readme():
@@ -111,7 +112,7 @@ def do_setup():
           long_description_content_type='text/markdown',
           maintainer='OpenCompass Authors',
           cmdclass={'download_nltk': DownloadNLTK},
-          setup_requires=['nltk==3.8'],
+          setup_requires=[],#['nltk==3.8'],
           python_requires='>=3.8.0',
           install_requires=parse_requirements('requirements/runtime.txt'),
           license='Apache License 2.0',

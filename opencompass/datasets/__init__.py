@@ -40,10 +40,10 @@ from .iwslt2017 import *  # noqa: F401, F403
 from .jigsawmultilingual import *  # noqa: F401, F403
 from .kaoshi import KaoshiDataset, KaoshiEvaluator  # noqa: F401, F403
 from .lambada import *  # noqa: F401, F403
-from .lawbench import *  # noqa: F401, F403
+# from .lawbench import *  # noqa: F401, F403
 from .lcsts import *  # noqa: F401, F403
 from .leval import *  # noqa: F401, F403
-from .longbench import *  # noqa: F401, F403
+# from .longbench import *  # noqa: F401, F403
 from .math import *  # noqa: F401, F403
 from .mathbench import *  # noqa: F401, F403
 from .mbpp import *  # noqa: F401, F403
@@ -53,32 +53,32 @@ from .narrativeqa import *  # noqa: F401, F403
 from .natural_question import *  # noqa: F401, F403
 from .obqa import *  # noqa: F401, F403
 from .piqa import *  # noqa: F401, F403
-from .qasper import *  # noqa: F401, F403
-from .qaspercut import *  # noqa: F401, F403
-from .race import *  # noqa: F401, F403
-from .realtoxicprompts import *  # noqa: F401, F403
-from .record import *  # noqa: F401, F403
-from .safety import *  # noqa: F401, F403
-from .scibench import ScibenchDataset, scibench_postprocess  # noqa: F401, F403
-from .siqa import *  # noqa: F401, F403
-from .squad20 import SQuAD20Dataset, SQuAD20Evaluator  # noqa: F401, F403
-from .storycloze import *  # noqa: F401, F403
-from .strategyqa import *  # noqa: F401, F403
-from .summedits import *  # noqa: F401, F403
-from .summscreen import *  # noqa: F401, F403
-from .tabmwp import *  # noqa: F401, F403
-from .TheoremQA import *  # noqa: F401, F403
-from .tnews import *  # noqa: F401, F403
+# from .qasper import *  # noqa: F401, F403
+# from .qaspercut import *  # noqa: F401, F403
+# from .race import *  # noqa: F401, F403
+# from .realtoxicprompts import *  # noqa: F401, F403
+# from .record import *  # noqa: F401, F403
+# from .safety import *  # noqa: F401, F403
+# from .scibench import ScibenchDataset, scibench_postprocess  # noqa: F401, F403
+# from .siqa import *  # noqa: F401, F403
+# from .squad20 import SQuAD20Dataset, SQuAD20Evaluator  # noqa: F401, F403
+# from .storycloze import *  # noqa: F401, F403
+# from .strategyqa import *  # noqa: F401, F403
+# from .summedits import *  # noqa: F401, F403
+# from .summscreen import *  # noqa: F401, F403
+# from .tabmwp import *  # noqa: F401, F403
+# from .TheoremQA import *  # noqa: F401, F403
+# from .tnews import *  # noqa: F401, F403
 from .triviaqa import *  # noqa: F401, F403
-from .triviaqarc import *  # noqa: F401, F403
-from .truthfulqa import *  # noqa: F401, F403
-from .tydiqa import *  # noqa: F401, F403
-from .wic import *  # noqa: F401, F403
-from .winograd import *  # noqa: F401, F403
-from .winogrande import *  # noqa: F401, F403
-from .wnli import wnliDataset  # noqa: F401, F403
-from .wsc import *  # noqa: F401, F403
-from .xcopa import *  # noqa: F401, F403
-from .xiezhi import XiezhiDataset, XiezhiRetriever  # noqa: F401, F403
-from .xlsum import *  # noqa: F401, F403
-from .xsum import *  # noqa: F401, F403
+# from .triviaqarc import *  # noqa: F401, F403
+# from .truthfulqa import *  # noqa: F401, F403
+# from .tydiqa import *  # noqa: F401, F403
+# from .wic import *  # noqa: F401, F403
+# from .winograd import *  # noqa: F401, F403
+# from .winogrande import *  # noqa: F401, F403
+# from .wnli import wnliDataset  # noqa: F401, F403
+# from .wsc import *  # noqa: F401, F403
+# from .xcopa import *  # noqa: F401, F403
+# from .xiezhi import XiezhiDataset, XiezhiRetriever  # noqa: F401, F403
+# from .xlsum import *  # noqa: F401, F403
+# from .xsum import *  # noqa: F401, F403
